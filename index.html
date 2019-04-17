@@ -1,15 +1,44 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title></title>
-	<meta charset="utf-8">
-	<title>Foodie Tasty!</title>
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-	<link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css">
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-	<script type="text/javascript" src="assets/javascript/app.js"></script>
-</head>
-<body>
 
+<head>
+   <meta charset="utf-8">
+   <title>New York Times Search</title>
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+       integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+   <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css">
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+   <script type="text/javascript" src="assets/javascript/app.js"></script>
+</head>
+
+<body>
+   <form>
+       <header>
+           <h1>New York Times Search</h1>
+       </header>
+       <br>
+       Search Term:<br>
+       <input type="text" name="Search Term" id="Search"><br>
+
+       Number of Records to Retrive:<br>
+       <input type="text" name="Number of Records to Retrive" id="NumofRecords"><br>
+
+       Start Year (Optional):<br>
+       <input type="text" name="Start Year (Optional)" id="StartYear"><br>
+
+       End Year (Optional):<br>
+       <input type="text" name="End Year (Optional)" id="EndYear"><br>
+
+       <br>
+       <input type="submit" value="Search" id="SearchButton">
+
+       <input type="button" value="Clear Results" id="ClearButton">
+
+   </form>
+   <br>
+   <article>
+       <h5>Top Articles</h5>
+   </article>
 </body>
+
 </html>
