@@ -59,7 +59,6 @@ $(document).ready(function () {
 			}
 			else {
 				url = url + "&q=" + search;
-				ajaxcall(url);
 				console.log("4")
 			}
 		}
