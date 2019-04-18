@@ -1,14 +1,3 @@
-function ajaxcall(url) {
-	// do ajax call
-	$.ajax({
-		url: url,
-		method: "GET"
-	}).then(function (response) {
-		// receive response
-		console.log(response)
-	});
-}
-
 $(document).ready(function () {
 	// declare variable for later use for search
 	var search = "";
@@ -49,7 +38,6 @@ $(document).ready(function () {
 					startYear = (startYear + "0101").toString();
 					if (regex.test(startYear)) {
 						url = url + "&fq=" + search + "&facet_field=day_of_week&facet=true&begin_date=" + startYear;
-						ajaxcall(url);
 						console.log("1")
 					}
 				}
@@ -57,7 +45,6 @@ $(document).ready(function () {
 					endYear = (endYear + "1231").toString();
 					if (regex.test(endYear)) {
 						url = url + "&fq=" + search + "&facet_field=day_of_week&facet=true&end_date=" + endYear;
-						ajaxcall(url);
 						console.log("2")
 					}
 				}
@@ -66,7 +53,6 @@ $(document).ready(function () {
 					endYear = (endYear + "1231").toString();
 					if (regex.test(startYear) && regex.test(endYear)) {
 						url = url + "&fq=" + search + "&facet_field=day_of_week&facet=true&begin_date=" + startYear + "&end_date=" + endYear;
-						ajaxcall(url);
 						console.log("3")
 					}
 				}
