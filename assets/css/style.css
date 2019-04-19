@@ -1,0 +1,176 @@
+
+body{
+    font-family: 'Permanent Marker', cursive;
+    background-image: url("../images/960px\ background.jpg");
+    background-color: black;
+    background-attachment: fixed;
+    background-position-x: center;
+    background-size: 180%;;
+    background-repeat: no-repeat;
+    opacity: 0.9;
+    margin:auto;  
+}
+
+h1{
+    text-align: center;
+    background-color:darkblue;
+    color:white;
+    max-width: 895px;
+    font-size:30px;
+    width:40%;
+    margin:auto;
+    margin-bottom:10px;
+    margin-top:10px;
+    padding:20px 5px;
+
+}
+
+h4{
+    border-bottom: 2px solid lightgray;
+    font-size:20px;
+    padding-bottom:5px;
+    margin:15px 8px; 
+}
+
+p{
+    margin:0px 8px;
+}
+
+input{
+    width:94%;
+    border: 2px solid lightgrey;
+    padding:5px;
+    margin:2px;
+}
+
+select{
+    border: 2px solid lightgrey;
+    padding:2px;
+    margin:5px;
+}
+    
+
+.container{
+ 
+    max-width:960px;
+    height:auto;
+    margin:auto;
+}
+
+.box_1{
+    background-color: #F5F5F5;
+    width:45%;
+    height:360px;
+    margin:0px 0px 5px 24px;
+    border-radius:5px;
+    border: 2px solid Black;
+    float:left;
+}
+
+.box_2{
+    background-color: #F5F5F5;
+    width:45%;
+    margin:0px 0px 5px 24px;
+    border-radius:5px;
+    border: 2px solid Black;
+    max-height: 360px;
+    overflow: auto;
+    float:left;
+}
+
+.form_button{
+    width:auto;
+    padding:3px;
+    margin:10px;
+}
+ 
+.Results{
+
+    border-bottom: 2px solid lightgray;
+    padding:5px;
+    margin:5px;
+}
+
+@media screen and (max-width: 710px) {
+
+    body{
+
+        background-size: 300%;;
+    }
+
+    h1{
+        font-size:25px;
+    }
+
+    h4{
+        font-size:18px;
+        
+    }
+}
+
+@media screen and (max-width: 600px) {
+
+    h1{
+        font-size:30px;
+        padding:20px 0px;
+        margin-right:15px;
+        width:95%;
+    }
+
+    h4{
+        font-size:15px;
+    }
+
+    p{
+        font-size:12px;
+    }
+
+    .box_1{
+    
+        width:95%;
+        margin:10px;  
+    }
+    
+    .box_2{
+
+        width:95%;
+        margin:10px; 
+    }
+
+}
+
+@media screen and (max-width: 500px) {
+
+    body{
+        background-size: 500%;
+    }
+
+    h1{
+        font-size:28px;
+        margin-top:0px;
+        border: 0px;
+        border-radius: 0px;
+        width:100%;
+    }
+
+    .box_1{
+        margin:8px;  
+    }
+    
+    .box_2{
+        margin:8px; 
+    }
+
+}
+
+@media screen and (max-width: 330px) {
+
+    .box_1{
+        margin:6px;  
+    }
+    
+    .box_2{
+        margin:6px; 
+    }
+
+}

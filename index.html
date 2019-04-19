@@ -3,9 +3,10 @@
 
 <head>
 	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>New York Times Search</title>
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-		integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<!--<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+		integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">-->
 	<link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css">
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script type="text/javascript" src="assets/javascript/app.js"></script>
@@ -14,45 +15,49 @@
 <body>
 	<header>
 		<h1>New York Times Search</h1>
-	</header>
-	<br>
-	<form id="form">
-		Search Term:<br>
-		<input type="text" name="Search Term" id="Search" pattern="[A-Za-z0-9\s]+" required=""><br>
+    </header>
 
-		Number of Records to Retrive:<br>
-		<select name="NumOfRecord" id="NumOfRecord">
-			<option value="1">1</option>
-			<option value="2">2</option>
-			<option value="3">3</option>
-			<option value="4">4</option>
-			<option value="5">5</option>
-			<option value="6">6</option>
-			<option value="7">7</option>
-			<option value="8">8</option>
-			<option value="9">9</option>
-			<option value="10">10</option>
-		</select><br>
+    
+    <div class="container">
+        <div class="box_1">
+            <h4>Search Parameters</h4>
 
-		Start Year (Optional):<br>
-		<input type="text" name="Start Year (Optional)" id="StartYear" pattern="(19\d{2})|(200\d)|(201[0-9])"
-			title="Please enter a valid year"><br>
+	        <form id="form">
+		        <p>Search Term:</p>
+		        <input type="text" name="Search Term" id="Search" pattern="[A-Za-z0-9\s]+" required="">
 
-		End Year (Optional):<br>
-		<input type="text" name="End Year (Optional)" id="EndYear" pattern="(19\d{2})|(200\d)|(201[0-9])"
-			title="Please enter a valid year"><br>
+		        <p>Number of Records to Retrive:</p>
+                <select name="NumOfRecord" id="NumOfRecord">
+			        <option value="1">1</option>
+			        <option value="2">2</option>
+			        <option value="3">3</option>
+			        <option value="4">4</option>
+			        <option value="5">5</option>
+			        <option value="6">6</option>
+			        <option value="7">7</option>
+			        <option value="8">8</option>
+			        <option value="9">9</option>
+			        <option value="10">10</option>
+		        </select>
 
-		<br>
-		<input type="submit" value="Search" id="SearchButton">
+		        <p>Start Year (Optional):</p>
+		        <input type="text" name="Start Year (Optional)" id="StartYear" pattern="(19\d{2})|(200\d)|(201[0-9])" title="Please enter a valid year">
 
-		<input type="button" value="Clear Results" id="ClearButton">
+                <p>End Year (Optional):</p>
+		        <input type="text" name="End Year (Optional)" id="EndYear" pattern="(19\d{2})|(200\d)|(201[0-9])" title="Please enter a valid year"><br>
 
-	</form>
-	<br>
-	<article>
-		<h5>Top Articles</h5>
-		<div id="main-display"></div>
-	</article>
+		        <input type="submit" value="Search" Class="form_button" id="SearchButton">
+		        <input type="button" value="Clear Results" Class="form_button" id="ClearButton">
+            </form>
+        </div>
+    
+        <div class="box_2">
+            <article>
+		        <h4>Top Articles</h4>
+		        <div id="main-display"></div>
+            </article>
+        </div>
+    </div>
 </body>
 
 </html>
