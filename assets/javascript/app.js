@@ -92,11 +92,11 @@ $(document).ready(function () {
 				newDiv.addClass("Results");
 				newDiv.attr("id", ("Doc" + resultCount))
 				// The next five lines retrieve then store their information into the newdiv. 
-				headline = (response.response.docs[i].headline.main); newDiv.append(headline + "<br>");
-				source = (response.response.docs[i].source); newDiv.append("By: " + source + "<br>");
-				section = (response.response.docs[i].section_name); newDiv.append("Section: " + section + "<br>");
-				pubDate = (response.response.docs[i].pub_date); newDiv.append(pubDate + "<br>");
-				webURL = (response.response.docs[i].web_url); newDiv.append(webURL + "<br>" + "<br>");
+				headline = (response.response.docs[i].headline.main); newDiv.append("<b><u>Article Title:</u></b> " + headline + "<br>");
+				source = (response.response.docs[i].source); newDiv.append("<b><u>By:</u></b> " + source + "<br>");
+				section = (response.response.docs[i].section_name); newDiv.append("<b><u>Section:</u></b> " + section + "<br>");
+				pubDate = (response.response.docs[i].pub_date); newDiv.append("<b><u>Publish Date:</u></b> " + pubDate + "<br>");
+				webURL = (response.response.docs[i].web_url); newDiv.append("<b><u>URL:</u></b> " + webURL + "<br>" + "<br>");
 				// This line finally adds the newDiv into the document 
 				$("#main-display").append(newDiv)
 			}
